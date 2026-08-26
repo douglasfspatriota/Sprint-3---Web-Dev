@@ -1,21 +1,21 @@
 :root {
-  --color-navy: #1a3c8f;
-  --color-navy-dark: #122a66;
-  --color-coral: #ff7a45;
-  --color-coral-dark: #e85f2a;
-  --color-gray: #5a6376;
-  --color-text: #20242c;
-  --color-bg: #ffffff;
-  --color-surface: #f5f6fa;
-  --color-border: #e2e4ea;
-  --color-white: #ffffff;
+  --cor-marinho: #1a3c8f;
+  --cor-marinho-escuro: #122a66;
+  --cor-coral: #ff7a45;
+  --cor-coral-escuro: #e85f2a;
+  --cor-cinza: #5a6376;
+  --cor-texto: #20242c;
+  --cor-fundo: #ffffff;
+  --cor-superficie: #f5f6fa;
+  --cor-borda: #e2e4ea;
+  --cor-branco: #ffffff;
 
-  --font-base:
+  --fonte-base:
     'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
 
-  --container-width: 1180px;
-  --radius: 12px;
-  --shadow: 0 10px 30px rgba(26, 60, 143, 0.12);
+  --largura-container: 1180px;
+  --raio: 12px;
+  --sombra: 0 10px 30px rgba(26, 60, 143, 0.12);
 }
 
 * {
@@ -28,9 +28,9 @@ html {
 
 body {
   margin: 0;
-  font-family: var(--font-base);
-  color: var(--color-text);
-  background: var(--color-bg);
+  font-family: var(--fonte-base);
+  color: var(--cor-texto);
+  background: var(--cor-fundo);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -41,7 +41,7 @@ h2,
 h3,
 h4 {
   margin: 0;
-  color: var(--color-navy);
+  color: var(--cor-marinho);
   font-weight: 700;
   line-height: 1.2;
 }
@@ -74,7 +74,7 @@ ol {
 
 .container {
   width: 100%;
-  max-width: var(--container-width);
+  max-width: var(--largura-container);
   margin: 0 auto;
   padding: 0 24px;
 }
