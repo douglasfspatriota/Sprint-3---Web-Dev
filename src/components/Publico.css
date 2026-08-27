@@ -1,0 +1,155 @@
+.publico {
+  padding: 72px 0;
+}
+
+.publico__cabecalho {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 48px;
+}
+
+.publico__cabecalho h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.publico__persona {
+  color: var(--cor-cinza);
+  line-height: 1.6;
+}
+
+.publico__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.stat-card {
+  background: var(--cor-superficie);
+  border-radius: var(--raio);
+  padding: 28px 20px;
+  text-align: center;
+}
+
+.stat-card__valor {
+  display: block;
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--cor-coral);
+  margin-bottom: 8px;
+}
+
+.stat-card__texto {
+  color: var(--cor-cinza);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.publico__depoimentos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 56px;
+}
+
+.depoimento-card {
+  margin: 0;
+  background: var(--cor-fundo);
+  border-left: 4px solid var(--cor-marinho);
+  border-radius: 0 var(--raio) var(--raio) 0;
+  padding: 24px;
+  box-shadow: var(--sombra);
+}
+
+.depoimento-card p {
+  color: var(--cor-texto);
+  font-style: italic;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.depoimento-card cite {
+  color: var(--cor-cinza);
+  font-size: 14px;
+  font-style: normal;
+}
+
+.publico__calculadora {
+  background: var(--cor-marinho);
+  color: var(--cor-branco);
+  border-radius: var(--raio);
+  padding: 40px;
+  text-align: center;
+}
+
+.publico__calculadora h3 {
+  color: var(--cor-branco);
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.publico__calculadora > p {
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 460px;
+  margin: 0 auto 24px;
+}
+
+.calculadora__campo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+
+.calculadora__campo input {
+  width: 100px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 18px;
+  text-align: center;
+  font-family: inherit;
+}
+
+.calculadora__resultado {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+}
+
+.calculadora__resultado div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.calculadora__resultado strong {
+  font-size: 32px;
+  color: var(--cor-coral);
+}
+
+.calculadora__resultado span {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 880px) {
+  .publico {
+    padding: 48px 0;
+  }
+
+  .publico__stats {
+    grid-template-columns: 1fr;
+  }
+
+  .publico__depoimentos {
+    grid-template-columns: 1fr;
+  }
+
+  .calculadora__resultado {
+    gap: 24px;
+  }
+}
