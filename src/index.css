@@ -78,3 +78,40 @@ ol {
   margin: 0 auto;
   padding: 0 24px;
 }
+
+.botao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  border-radius: var(--raio);
+  font-weight: 700;
+  font-size: 15px;
+  border: 2px solid transparent;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s,
+    background 0.2s,
+    color 0.2s;
+}
+
+.botao--primario {
+  background: var(--cor-coral);
+  color: var(--cor-branco);
+}
+
+.botao--primario:hover {
+  background: var(--cor-coral-escuro);
+  box-shadow: var(--sombra);
+}
+
+.botao--secundario {
+  background: transparent;
+  border-color: var(--cor-marinho);
+  color: var(--cor-marinho);
+}
+
+.botao--secundario:hover {
+  background: var(--cor-marinho);
+  color: var(--cor-branco);
+}
