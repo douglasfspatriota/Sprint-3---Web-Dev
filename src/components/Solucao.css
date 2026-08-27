@@ -1,0 +1,117 @@
+.solucao {
+  padding: 72px 0;
+  background: var(--cor-superficie);
+}
+
+.solucao__intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 56px;
+}
+
+.solucao__intro h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.solucao__intro p {
+  color: var(--cor-cinza);
+  line-height: 1.6;
+}
+
+.solucao__comparativo {
+  margin-bottom: 56px;
+}
+
+.solucao__comparativo img {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: var(--raio);
+}
+
+.solucao__gestos {
+  margin-bottom: 56px;
+  text-align: center;
+}
+
+.solucao__gestos h3 {
+  font-size: 26px;
+  margin-bottom: 28px;
+}
+
+.gestos__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.gesto-card {
+  background: var(--cor-fundo);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  padding: 24px 16px;
+  text-align: center;
+}
+
+.gesto-card__gesto {
+  display: inline-block;
+  font-weight: 700;
+  color: var(--cor-branco);
+  background: var(--cor-coral);
+  border-radius: 999px;
+  padding: 6px 16px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.gesto-card__funcao {
+  color: var(--cor-cinza);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.beneficios__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.beneficio-card {
+  background: var(--cor-fundo);
+  border-radius: var(--raio);
+  padding: 28px;
+  box-shadow: var(--sombra);
+}
+
+.beneficio-card h4 {
+  color: var(--cor-marinho);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.beneficio-card p {
+  color: var(--cor-cinza);
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+@media (max-width: 880px) {
+  .solucao {
+    padding: 48px 0;
+  }
+
+  .solucao__intro {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .gestos__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .beneficios__grid {
+    grid-template-columns: 1fr;
+  }
+}
