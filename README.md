@@ -43,7 +43,7 @@ Todo o conteúdo estratégico do projeto — problema, solução, os 5 gestos, p
 
 ## Deploy
 
-Link do deploy na Vercel: *(a preencher após o deploy)*
+Link do deploy na Vercel: https://sprint-3-web-dev-mu.vercel.app
 
 ## Equipe PrimeNext
 
