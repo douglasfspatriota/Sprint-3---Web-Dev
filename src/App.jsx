@@ -5,6 +5,7 @@ import Publico from './components/Publico'
 import Galeria from './components/Galeria'
 import Equipe from './components/Equipe'
 import Contato from './components/Contato'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Galeria />
       <Equipe />
       <Contato />
+      <Footer />
     </>
   )
 }
