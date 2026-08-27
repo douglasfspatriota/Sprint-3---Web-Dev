@@ -1,0 +1,122 @@
+.contato {
+  padding: 72px 0;
+  background: var(--cor-superficie);
+}
+
+.contato__interior {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.contato h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.contato__form-wrapper > p {
+  color: var(--cor-cinza);
+  margin-bottom: 24px;
+}
+
+.contato__form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contato__form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--cor-texto);
+}
+
+.contato__form input,
+.contato__form textarea {
+  font-family: inherit;
+  font-size: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--cor-borda);
+  resize: vertical;
+}
+
+.contato__form input:focus,
+.contato__form textarea:focus {
+  outline: 2px solid var(--cor-marinho);
+  outline-offset: 1px;
+}
+
+.contato__form button {
+  align-self: flex-start;
+  border: none;
+}
+
+.contato__historico h3 {
+  font-size: 18px;
+  color: var(--cor-marinho);
+  margin-bottom: 16px;
+}
+
+.contato__vazio {
+  color: var(--cor-cinza);
+  font-size: 14px;
+}
+
+.contato__lista {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-height: 420px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.mensagem-card {
+  background: var(--cor-fundo);
+  border-radius: var(--raio);
+  padding: 16px 18px;
+  box-shadow: var(--sombra);
+}
+
+.mensagem-card__cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+
+.mensagem-card__cabecalho strong {
+  color: var(--cor-marinho);
+  font-size: 15px;
+}
+
+.mensagem-card__cabecalho span {
+  color: var(--cor-cinza);
+  font-size: 12px;
+}
+
+.mensagem-card__email {
+  color: var(--cor-cinza);
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.mensagem-card p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 880px) {
+  .contato {
+    padding: 48px 0;
+  }
+
+  .contato__interior {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
